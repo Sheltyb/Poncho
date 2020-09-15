@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{44B92E9D-8161-41F5-840D-5843A8966166}">
+	<children>
+		<child name="Poncho" key="{DB478AF1-4A2A-4600-A9DE-82BFC8C895DC}" path="Poncho\Poncho.mds" />
+	</children>
+	<testItems key="{DC92E851-49DD-4B30-A4FE-2881CA49C563}">
+		<children>
+			<testItem key="{DB478AF1-4A2A-4600-A9DE-82BFC8C895DC}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{44B611F0-EB96-44A2-A000-ABA14D35765B}" />
+	<analysis key="{9C849833-EAB4-4909-BAA9-C265DB507C9D}" />
+	<scc key="{C900492B-D218-429C-9AA0-264B7D78CA88}" name="Git Plugin">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}">
+		<CrossBrowserTesting Enable="False" />
+	</extender>
+</Root>

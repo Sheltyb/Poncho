@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="Common">
+			<child name="Browser" key="{69C081F6-8052-4C65-94AF-4B583D240C22}" path="Browser.js" />
+		</folder>
+		<folder name="Get Quote">
+			<child name="Get_a_Quote_Page" key="{37E6EBD0-C17C-4FCE-B88F-D129244F3488}" path="Get_a_Quote_Page.js" />
+			<child name="Get_a_Quote_Cars_Page" key="{0D3C08E3-896B-4EA9-AD30-9DEE11DB8D3D}" path="Get_a_Quote_Cars_Page.js" />
+		</folder>
+		<folder name="Poncho Main Page">
+			<child name="Poncho_Insurance_home_page" key="{96431B4F-9A7D-48AA-8067-BDA59865DF8D}" path="Poncho_Insurance_home_page.js" />
+		</folder>
+		<child name="StepDefinitions" key="{F15C96FC-BDA2-4AD8-A1BF-C189D81F1659}" path="StepDefinitions.js" />
+	</children>
+</Root>
