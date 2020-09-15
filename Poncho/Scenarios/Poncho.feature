@@ -5,6 +5,6 @@
     * Open Chrome Browser
 
   Scenario: Navigate to Poncho Insurance Website
-    Given I see a "browserType" Browser Open
+    Given I see a "Chrome" Browser Open
     When I enter the url "https://ponchoinsurance.com.au/"
     Then I expect to see the Poncho Insurance main web page

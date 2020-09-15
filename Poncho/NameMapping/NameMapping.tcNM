@@ -3,6 +3,382 @@
 	<Storages Current="0">
 		<Child Name="Default Configuration" />
 	</Storages>
-	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}" />
-	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}" />
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{9751333F-167E-4589-82AE-2F5395880A0E}">
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="browser" Key="{3653C504-5697-4915-9DA3-E4C473E3A1C3}">
+						<Properties>
+							<Property Name="ObjectType">
+								<Value Value="Browser" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="BrowserWindow" Key="{65C3F409-6B76-427E-B755-A7DF91811108}">
+								<Image FileName="1543277962" Left="-16" Top="-16" Right="3856" Bottom="2076" />
+								<TypeInfo Item0="{A75A8892-168A-4575-B811-373337A6B54C}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="BrowserWindow" />
+									</Property>
+									<Property Name="ObjectIdentifier">
+										<Value Value="0" Type="0" />
+									</Property>
+								</Properties>
+							</Child>
+							<Child Name="pagePonchoPonchoScriptAtMasterSh" Key="{03B5E032-4B1C-46F9-AF48-74C8D1BB3927}">
+								<Image FileName="1018696786" Left="0" Top="256" Right="3840" Bottom="2061" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://github.com/Sheltyb/Poncho/tree/master/Poncho/Script" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="textnode" Key="{A3F559B2-23FE-445F-9F11-AAF828397821}">
+										<Image FileName="1018696786" Left="0" Top="-509" Right="3798" Bottom="2152" />
+										<TypeInfo Item0="{00D2CD8D-9053-4540-824F-397B784C5238}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//body[contains(., &apos;Skip to content&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value=".logged-in" />
+											</Selector>
+											<Selector>
+												<Value Value="//body" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="pagePonchoinsuranceComAu" Key="{CD0DA0BD-3ABE-434A-AD42-BAE36721412F}">
+								<TypeInfo Item0="{CC18B20A-2C8D-4816-A445-6C27FE0AB432}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://ponchoinsurance.com.au/" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="sectionBanner" Key="{9D6588BB-1D22-4708-BB8D-4698EC01B432}">
+										<Image FileName="1522044267" Left="16" Top="452" Right="3814" Bottom="622" />
+										<TypeInfo Item0="{22F2EE0B-356B-4F91-926A-B69F1A8722BA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="#banner" />
+											</Selector>
+											<Selector>
+												<Value Value="//section[contains(., &apos;COVID-19 – We’re here to help with a 30% premium reduction.&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//section[@id=&apos;banner&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//body[@id=&apos;home&apos;]/main/section" />
+											</Selector>
+											<Selector>
+												<Value Value="//section" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="headerDesktop" Key="{62BC4338-8D33-4DF7-842C-C04187F61D50}">
+										<Image FileName="1522044267" Left="16" Top="272" Right="3856" Bottom="452" />
+										<TypeInfo Item0="{22F2EE0B-356B-4F91-926A-B69F1A8722BA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="#desktop" />
+											</Selector>
+											<Selector>
+												<Value Value="//header[contains(., &apos;Car Insurance&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//header[@id=&apos;desktop&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//body[@id=&apos;home&apos;]/header" />
+											</Selector>
+											<Selector>
+												<Value Value="//header" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="nav" Key="{E5596D7B-9F19-4EA8-B2AC-8BE5644BAAE6}">
+										<Image FileName="1522044267" Left="213" Top="272" Right="2145" Bottom="452" />
+										<TypeInfo Item0="{22F2EE0B-356B-4F91-926A-B69F1A8722BA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//nav[contains(., &apos;Car Insurance&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value=".liner &gt; .left" />
+											</Selector>
+											<Selector>
+												<Value Value="//header[@id=&apos;desktop&apos;]/div/nav" />
+											</Selector>
+											<Selector>
+												<Value Value="//nav" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="linkLogo" Key="{D8EC6288-9E8A-41A1-8BAC-760133AE5A48}">
+										<Image FileName="1522044267" Left="213" Top="302" Right="583" Bottom="422" />
+										<TypeInfo Item0="{40B07275-EF3D-4DB9-82F4-6E23E54534D4}" />
+										<Selectors>
+											<Selector>
+												<Value Value="#logo" />
+											</Selector>
+											<Selector>
+												<Value Value="a[href=&apos;/&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value=".liner &gt; .left &gt; #logo" />
+											</Selector>
+											<Selector>
+												<Value Value="//a[@id=&apos;logo&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//header[@id=&apos;desktop&apos;]/div/nav/a" />
+											</Selector>
+											<Selector>
+												<Value Value="//a[contains(@href, &apos;/&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//a" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="imagePonchoInsuranceLogoSvg" Key="{7CEABB96-A89C-4C00-981D-DAFC133B749E}">
+										<Image FileName="1522044267" Left="213" Top="302" Right="531" Bottom="422" />
+										<TypeInfo Item0="{22F2EE0B-356B-4F91-926A-B69F1A8722BA}" />
+										<Selectors>
+											<Selector>
+												<Value Value=".left &gt; #logo &gt; [alt=&apos;Poncho logo&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//img[@alt=&apos;Poncho logo&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//a[@id=&apos;logo&apos;]/img" />
+											</Selector>
+											<Selector>
+												<Value Value="//a[contains(@href, &apos;/&apos;)]/img" />
+											</Selector>
+											<Selector>
+												<Value Value="//img" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="sectionSqueezebanner" Key="{EEC1932D-E3A2-4AD8-9495-6F641F541E43}">
+										<Image FileName="-224082097" Left="0" Top="606" Right="3798" Bottom="1885" />
+										<Selectors>
+											<Selector>
+												<Value Value="#squeezeBanner" />
+											</Selector>
+											<Selector>
+												<Value Value="//section[contains(., &apos;Easier, better, smarter car insurance.&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//section[@id=&apos;squeezeBanner&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;squeezePage&apos;]/section" />
+											</Selector>
+											<Selector>
+												<Value Value="//div/section" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonGetAQuote" Key="{1A3CFE5A-44CE-4DDA-8C42-A04E0EEB0026}">
+										<Image FileName="-224082097" Left="549" Top="1472" Right="844" Bottom="1579" />
+										<TypeInfo Item0="{459B5B1B-0C60-4EF9-B5F7-EA7CDCD4EA31}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[contains(text(), &apos;Get a quote&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value=".btnContainer &gt; [data-action=&apos;quote&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//section[@id=&apos;squeezeBanner&apos;]/div/ul/li/div/button" />
+											</Selector>
+											<Selector>
+												<Value Value="//li/div/button" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="pagePonchoInsurance" Key="{667E4426-013A-4040-A428-767BA3400919}">
+								<Image FileName="1664663713" Left="16" Top="272" Right="3856" Bottom="2077" />
+								<TypeInfo Item0="{F73B43AE-EA5E-4D6E-BB90-8B568A368596}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://quote.ponchoinsurance.com.au/" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="textnode" Key="{02F0BDC1-4F3C-412E-97CD-748B8B3B1475}">
+										<Image FileName="1664663713" Left="690" Top="504" Right="2215" Bottom="744" />
+										<TypeInfo Item0="{22F2EE0B-356B-4F91-926A-B69F1A8722BA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//h1[text()=&apos;Get a quote for Poncho Insurance&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value=".poncho-h2" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;start-modal&apos;]/div/div/h1" />
+											</Selector>
+											<Selector>
+												<Value Value="//h1" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="section" Key="{B927553E-4FE1-4B25-B89D-3AB7AD4B9D34}">
+										<Image FileName="1664663713" Left="690" Top="1191" Right="2215" Bottom="2456" />
+										<TypeInfo Item0="{22F2EE0B-356B-4F91-926A-B69F1A8722BA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//section[contains(., &apos;What should we call you?First name&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value=".shared-FormSection" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;start-modal&apos;]/div/div/section" />
+											</Selector>
+											<Selector>
+												<Value Value="//section" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="fieldset" Key="{418F84F8-6B02-41E9-85C7-97A3E9F67BFE}">
+										<Image FileName="1664663713" Left="730" Top="1404" Right="1625" Bottom="1634" />
+										<TypeInfo Item0="{5233970A-62AE-48DC-84D6-3326A30BCEBD}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//fieldset[contains(., &apos;First name&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value=".shared-FormContainer:nth-child(1) .shared-FormField:nth-child(1)" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;start-modal&apos;]/div/div/section/li/main/div/div/fieldset" />
+											</Selector>
+											<Selector>
+												<Value Value="//fieldset" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textboxFirstName" Key="{947B5C33-D502-448B-89AA-6C42F2598617}">
+										<Image FileName="1664663713" Left="750" Top="1484" Right="1625" Bottom="1584" />
+										<TypeInfo Item0="{6E257584-21BA-402D-B404-35BA150A5D6F}" />
+										<Selectors>
+											<Selector>
+												<Value Value="#policyStartFirstName" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@id=(//label[text()=&apos;First name&apos;]/@for)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@id=&apos;policyStartFirstName&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;start-modal&apos;]/div/div/section/li/main/div/div/fieldset/input" />
+											</Selector>
+											<Selector>
+												<Value Value="//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="header" Key="{B06D51B6-4EC1-44B7-B86A-C8C569E65404}">
+										<Image FileName="1664663713" Left="690" Top="1191" Right="2215" Bottom="1344" />
+										<TypeInfo Item0="{22F2EE0B-356B-4F91-926A-B69F1A8722BA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//header[contains(., &apos;What should we call you?&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value=".shared-FormContainer:nth-child(1) &gt; header" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;start-modal&apos;]/div/div/section/li/header" />
+											</Selector>
+											<Selector>
+												<Value Value="//li/header" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnode2" Key="{F77DF75D-0AC2-4131-AABD-4BF14DE9BB5C}">
+										<Image FileName="1664663713" Left="750" Top="1231" Right="1284" Bottom="1301" />
+										<TypeInfo Item0="{22F2EE0B-356B-4F91-926A-B69F1A8722BA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//h3[text()=&apos;What should we call you?&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value=".shared-FormContainer:nth-child(1) .poncho-lead" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;start-modal&apos;]/div/div/section/li/header/div/h3" />
+											</Selector>
+											<Selector>
+												<Value Value="//h3" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="browser" Owner="{3653C504-5697-4915-9DA3-E4C473E3A1C3}">
+			<Child Name="BrowserWindow" Owner="{65C3F409-6B76-427E-B755-A7DF91811108}" />
+			<Child Name="pagePonchoPonchoScriptAtMasterSh" Owner="{03B5E032-4B1C-46F9-AF48-74C8D1BB3927}">
+				<Child Name="textnode" Owner="{A3F559B2-23FE-445F-9F11-AAF828397821}" />
+			</Child>
+			<Child Name="pagePonchoinsuranceComAu" Owner="{CD0DA0BD-3ABE-434A-AD42-BAE36721412F}">
+				<Child Name="sectionBanner" Owner="{9D6588BB-1D22-4708-BB8D-4698EC01B432}" />
+				<Child Name="headerDesktop" Owner="{62BC4338-8D33-4DF7-842C-C04187F61D50}">
+					<Child Name="nav" Owner="{E5596D7B-9F19-4EA8-B2AC-8BE5644BAAE6}">
+						<Child Name="linkLogo" Owner="{D8EC6288-9E8A-41A1-8BAC-760133AE5A48}">
+							<Child Name="imagePonchoInsuranceLogoSvg" Owner="{7CEABB96-A89C-4C00-981D-DAFC133B749E}" />
+						</Child>
+					</Child>
+				</Child>
+				<Child Name="sectionSqueezebanner" Owner="{EEC1932D-E3A2-4AD8-9495-6F641F541E43}">
+					<Child Name="buttonGetAQuote" Owner="{1A3CFE5A-44CE-4DDA-8C42-A04E0EEB0026}" />
+				</Child>
+			</Child>
+			<Child Name="pagePonchoInsurance" Owner="{667E4426-013A-4040-A428-767BA3400919}">
+				<Child Name="textnode" Owner="{02F0BDC1-4F3C-412E-97CD-748B8B3B1475}" />
+				<Child Name="section" Owner="{B927553E-4FE1-4B25-B89D-3AB7AD4B9D34}">
+					<Child Name="fieldset" Owner="{418F84F8-6B02-41E9-85C7-97A3E9F67BFE}">
+						<Child Name="textboxFirstName" Owner="{947B5C33-D502-448B-89AA-6C42F2598617}" />
+					</Child>
+					<Child Name="header" Owner="{B06D51B6-4EC1-44B7-B86A-C8C569E65404}">
+						<Child Name="textnode2" Owner="{F77DF75D-0AC2-4131-AABD-4BF14DE9BB5C}" />
+					</Child>
+				</Child>
+			</Child>
+		</Child>
+	</LogicalNodes>
 </Root>

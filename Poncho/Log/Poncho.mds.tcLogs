@@ -20,7 +20,71 @@
 <Nodes version="1">
 	<Node name="root">
 		<Node name="folders"/>
-		<Node name="logs"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44090.0862006829"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{01195A43-E2B6-46C3-A823-147CF1EBDEEB}"/>
+				<Prp name="nameofroot" type="S" value="Open Browser"/>
+				<Prp name="relpath" type="S" value="16_09_2020_2_04 AM_07_739\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44090.0866701505"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{182D8CB9-BFD3-4630-93F7-DC0C4DFB55CD}"/>
+				<Prp name="nameofroot" type="S" value="Navigate to Poncho website"/>
+				<Prp name="relpath" type="S" value="16_09_2020_2_04 AM_48_301\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44090.1031401736"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{D18990CC-7FB1-4E71-BE30-0265EFAD6DF3}"/>
+				<Prp name="nameofroot" type="S" value="I see a &quot;Chrome&quot; Browser Open"/>
+				<Prp name="relpath" type="S" value="16_09_2020_2_28 AM_31_312\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44090.1057893056"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{BDE9AA30-31E0-4A61-A9FA-4287B91B8ADC}"/>
+				<Prp name="nameofroot" type="S" value="I see a &quot;Chrome&quot; Browser Open"/>
+				<Prp name="relpath" type="S" value="16_09_2020_2_32 AM_20_196\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44090.1063365278"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{498E07C4-42A0-49D8-A24D-0425C858868E}"/>
+				<Prp name="nameofroot" type="S" value="I see a &quot;Chrome&quot; Browser Open"/>
+				<Prp name="relpath" type="S" value="16_09_2020_2_33 AM_07_476\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44090.1065663889"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{63550C88-585B-488A-84F2-BDE4D1F53863}"/>
+				<Prp name="nameofroot" type="S" value="Poncho"/>
+				<Prp name="relpath" type="S" value="16_09_2020_2_33 AM_27_337\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0006">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44090.1100892014"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{F645B327-5F1E-4AF8-83D0-77D17684D76B}"/>
+				<Prp name="nameofroot" type="S" value="Poncho"/>
+				<Prp name="relpath" type="S" value="16_09_2020_2_38 AM_31_707\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>
 	</Node>

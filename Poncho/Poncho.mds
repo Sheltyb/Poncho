@@ -20,19 +20,19 @@
 				<testParameters />
 				<children />
 			</testItem>
-			<testItem name="Enter Customer name" key="{FDD067F0-DBB4-4625-8198-5A97E58F5750}" group="False" enabled="True" testMoniker="Get a Quote|Enter Customer Name on the What should we call you Quote section" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="Enter Customer name" key="{FDD067F0-DBB4-4625-8198-5A97E58F5750}" group="False" enabled="False" testMoniker="Get a Quote|Enter Customer Name on the What should we call you Quote section" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children />
 			</testItem>
-			<testItem name="Search for Car Rego and State" key="{AB89D075-8996-44DB-86C6-0819A2E385FF}" group="False" enabled="True" testMoniker="Cars|Enter the Car details in the Car page" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="Search for Car Rego and State" key="{AB89D075-8996-44DB-86C6-0819A2E385FF}" group="False" enabled="False" testMoniker="Cars|Enter the Car details in the Car page" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children />
 			</testItem>
-			<testItem name="Select Car 1" key="{3F89D3C3-C22D-4623-942A-36504768486D}" group="False" enabled="True" testMoniker="Cars|Select Yes This is my car" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="Select Car 1" key="{3F89D3C3-C22D-4623-942A-36504768486D}" group="False" enabled="False" testMoniker="Cars|Select Yes This is my car" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children />
 			</testItem>
-			<testItem name="Enter Details&#32;&#32;for where the car is located" key="{55CE9723-2A07-4545-836B-7C80D8E99651}" group="False" enabled="True" testMoniker="Cars|Enter details for Where do you park this car at night" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="Enter Details&#32;&#32;for where the car is located" key="{55CE9723-2A07-4545-836B-7C80D8E99651}" group="False" enabled="False" testMoniker="Cars|Enter details for Where do you park this car at night" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children />
 			</testItem>
