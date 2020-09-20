@@ -1,16 +1,16 @@
 ﻿ var browser = Aliases.browser;
- var page = browser.pagePonchoInsuranceGetAQuote;
+ var page = Aliases.browser.pagePonchoInsuranceGetAQuote;
  
 Then("I should see the Get a Quote page", function (){
-  aqObject.CheckProperty(Aliases.browser.pagePonchoInsuranceGetAQuote.textnode, "contentText", cmpEqual, "Get a quote for Poncho Insurance");
-  aqObject.CheckProperty(Aliases.browser.pagePonchoInsuranceGetAQuote.sectionWhatShouldWeCallYou.header.textnode2, "contentText", cmpEqual, "What should we call you?");
-  aqObject.CheckProperty(Aliases.browser.pagePonchoInsuranceGetAQuote.sectionWhatShouldWeCallYou.fieldset.textboxFirstName, "Text", cmpEqual, "");
+  aqObject.CheckProperty(page.textnodeTitleGetAQuoteForPonchoInsurance, "contentText", cmpEqual, "Get a quote for Poncho Insurance");
+  aqObject.CheckProperty(page.sectionWhatShouldWeCallYou.header.textnode2, "contentText", cmpEqual, "What should we call you?");
+  aqObject.CheckProperty(page.sectionWhatShouldWeCallYou.fieldset.textboxFirstName, "Text", cmpEqual, "");
 
 });
 
 Given("I am on the Get a Quote for Poncho Insurance Page", function (){
- aqObject.CheckProperty(Aliases.browser.pagePonchoInsuranceGetAQuote.textnode, "contentText", cmpEqual, "Get a quote for Poncho Insurance");
-  aqObject.CheckProperty(Aliases.browser.pagePonchoInsuranceGetAQuote.sectionWhatShouldWeCallYou.header.textnode2, "contentText", cmpEqual, "What should we call you?");
+ aqObject.CheckProperty(page.textnodeTitleGetAQuoteForPonchoInsurance, "contentText", cmpEqual, "Get a quote for Poncho Insurance");
+  aqObject.CheckProperty(page.sectionWhatShouldWeCallYou.header.textnode2, "contentText", cmpEqual, "What should we call you?");
 });
 
 When("I enter my first name {arg} and last name {arg}", function (firstName, lastName){
@@ -25,15 +25,20 @@ When("I enter my first name {arg} and last name {arg}", function (firstName, las
   textbox2.SetText(lastName);
  });
 
-When("I Select a random Policy Start Date between now and {arg} days in the future", function (param1){
- 
-  let textbox = page.sectionWhatShouldWeCallYou;
-  let textNode = textbox.fieldset2;
-  textNode.textnode3.Click();
-  aqObject.CheckProperty(textNode.textboxWhenWouldYouLikeYourPolic, "Text", cmpEqual, "17/09/2020");
-  textNode.textnode4.Click();
-  page.buttonGetAQuote.ClickButton();
-  page.Wait();
+When("I Select a random Policy Start Date between now and {arg} days in the future", function (futureDateCount){
+  var currentDate = new Date();
+  var futureDateIncrement = Number(futureDateCount);
+  var dateToSelect = new Date();
+  dateToSelect.setDate(currentDate.getDate() + futureDateIncrement);
+  var dateToSelectStr = dateToSelect.getDate() + "/" + dateToSelect.getMonth() + "/" + dateToSelect.getYear();
+  
+  let textbox = page.sectionWhatShouldWeCallYou.fieldsetWhenWouldYouLikeYourPolicyToStart.textboxWhenWouldYouLikeYourPolic;
+  let textNode = browser.pagePonchoInsuranceGetAQuote.sectionWhatShouldWeCallYou.fieldsetWhenWouldYouLikeYourPolicyToStart;
+  textNode.textnodeSelectCalendar.Click();
+  textNode.textboxWhenWouldYouLikeYourPolic.Click();
+  textNode.textnode.Click();
+    
+
 });
 
 When("When I click on Get a Quote button", function (){

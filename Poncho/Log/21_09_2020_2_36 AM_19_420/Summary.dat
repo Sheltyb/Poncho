@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test0">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="The browser is already running."/>
+							</Node>
+						</Node>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA0AEIAOQA1AEQANAA1ADcALQA1ADIAQQBCAC0ANAAxAEMAOQAtAEEANgBGADMALQBFAEUANwBGAEEAMgA4ADcARAAxADgAMQB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="status" type="I" value="1"/>
+						<Prp name="starttime" type="D" value="44095.1085710648"/>
+						<Prp name="duration" type="I" value="10051"/>
+						<Prp name="durationwithoutchildren" type="I" value="10051"/>
+						<Prp name="name" type="S" value="Open Chrome Browser"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBDADcAMQAxAEEAOAA0AEYALQAxADgAQwA1AC0ANAA1ADYAMgAtADgAQgBGADYALQA4AEIARgAxADUAQwA2ADYANgBGAEQARQB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="44095.1086882292"/>
+						<Prp name="duration" type="I" value="9414"/>
+						<Prp name="durationwithoutchildren" type="I" value="9414"/>
+						<Prp name="name" type="S" value="Navigate to Poncho Insurance Website"/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyADgAMwBGADUARAAyADkALQAxADkANgA5AC0ANABBAEUANQAtAEIAMAAyADIALQAxAEUAMgBFAEQANwA1AEEARQAxADEANgB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="44095.1087980903"/>
+						<Prp name="duration" type="I" value="6869"/>
+						<Prp name="durationwithoutchildren" type="I" value="6869"/>
+						<Prp name="name" type="S" value="Launch Get a Quote from Home page"/>
+					</Node>
+					<Node name="test3">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The object &quot;pagePonchoInsurance&quot; does not exist."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Unable to find the object pagePonchoInsurance. See Details for additional information."/>
+							</Node>
+							<Node name="error4">
+								<Prp name="msg" type="S" value="The script execution was interrupted."/>
+							</Node>
+							<Node name="error3">
+								<Prp name="msg" type="S" value="Unable to find the object pagePonchoInsurance. See Details for additional information."/>
+							</Node>
+							<Node name="error2">
+								<Prp name="msg" type="S" value="Unable to perform a property checkpoint, because the object does not have a property named &quot;contentText&quot;."/>
+							</Node>
+						</Node>
+						<Prp name="durationwithoutchildren" type="I" value="41743"/>
+						<Prp name="name" type="S" value="Enter Customer Name on the What should we call you Quote section"/>
+						<Prp name="duration" type="I" value="41743"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="starttime" type="D" value="44095.1088784375"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBEADYANwBCADYAQgBBAEUALQBCAEMARAA5AC0ANAAzAEIAMQAtADgANgBDADQALQA0ADEAOABCADgAMgBFADgAQgA2ADIANQB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+					</Node>
+					<Node name="test4">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="0"/>
+						<Prp name="name" type="S" value="Search for Car Rego and State"/>
+						<Prp name="duration" type="I" value="0"/>
+						<Prp name="status" type="I" value="3"/>
+						<Prp name="starttime" type="D" value="44095.1093619907"/>
+					</Node>
+				</Node>
+				<Prp name="incompletedtests" type="I" value="1"/>
+				<Prp name="failedtests" type="I" value="1"/>
+				<Prp name="starttime" type="D" value="44095.1085710648"/>
+				<Prp name="duration" type="I" value="68077"/>
+				<Prp name="warningtests" type="I" value="1"/>
+				<Prp name="name" type="S" value="Poncho"/>
+			</Node>
+		</Node>
+		<Prp name="testname" type="S" value="Poncho"/>
+		<Prp name="host" type="S" value="DESKTOP-Q7UO6MH"/>
+		<Prp name="name" type="S" value="Poncho"/>
+		<Prp name="failedtests" type="I" value="1"/>
+		<Prp name="user" type="S" value="SheltyB"/>
+		<Prp name="key" type="S" value="{F06E8D7B-0661-4226-B488-B192F551D146}"/>
+		<Prp name="tests" type="I" value="5"/>
+		<Prp name="incompletedtests" type="I" value="1"/>
+		<Prp name="warningtests" type="I" value="1"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="starttime" type="D" value="44095.1085581713"/>
+		<Prp name="stop" type="D" value="44095.1093751157"/>
+	</Node>
+</Nodes>

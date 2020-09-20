@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row3">
+				<Prp name="name" type="S" value="Enter Customer name [Scenarios\Get a Quote - Enter Customer Name on the What should we call you Quote section]"/>
+				<Prp name="end time" type="D" value="44095.1073806713"/>
+				<Prp name="details" type="S" value="{EF61A90D-309E-4720-ADA3-484E29E9774E}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="44095.1072039815"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="name" type="S" value="Navigate to Poncho website [Scenarios\Poncho - Navigate to Poncho Insurance Website]"/>
+				<Prp name="end time" type="D" value="44095.1069000463"/>
+				<Prp name="details" type="S" value="{ECEDEEA6-88CB-41F6-A1B8-E3A2D2D041F0}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="44095.1067915741"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="name" type="S" value="Get a Quote [Scenarios\Get a Quote - Launch Get a Quote from Home page]"/>
+				<Prp name="end time" type="D" value="44095.1072039699"/>
+				<Prp name="details" type="S" value="{DC637FA9-00A3-4ED0-95F7-2BBB2BC8B9AD}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="44095.1069000463"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="name" type="S" value="Open Browser [Scenarios\Poncho - Open Chrome Browser]"/>
+				<Prp name="end time" type="D" value="44095.1067915741"/>
+				<Prp name="details" type="S" value="{41BE4933-D300-4551-B7E9-86FE1AC2C898}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="status" type="I" value="1"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="44095.1066655787"/>
+			</Node>
+			<Node name="row4">
+				<Prp name="name" type="S" value="The execution process was interrupted."/>
+				<Prp name="end time" type="D" value="44095.1073806713"/>
+				<Prp name="details" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="44095.1073806713"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

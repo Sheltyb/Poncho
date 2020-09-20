@@ -24,11 +24,11 @@
 				<testParameters />
 				<children />
 			</testItem>
-			<testItem name="Search for Car Rego and State" key="{AB89D075-8996-44DB-86C6-0819A2E385FF}" group="False" enabled="False" testMoniker="Cars|Enter the Car details in the Car page" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="Search for Car Rego and State" key="{AB89D075-8996-44DB-86C6-0819A2E385FF}" group="False" enabled="True" testMoniker="Cars|Enter the Car details in the Car page" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children />
 			</testItem>
-			<testItem name="Select Car 1" key="{3F89D3C3-C22D-4623-942A-36504768486D}" group="False" enabled="False" testMoniker="Cars|Select Yes This is my car" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="Select Car 1" key="{3F89D3C3-C22D-4623-942A-36504768486D}" group="False" enabled="True" testMoniker="Cars|Select Yes This is my car" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children />
 			</testItem>

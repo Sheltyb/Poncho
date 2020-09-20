@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test3">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The script execution was interrupted."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Unable to verify a value with the property checkpoint, because the target object does not exist."/>
+							</Node>
+						</Node>
+						<Prp name="name" type="S" value="Enter Customer Name on the What should we call you Quote section"/>
+						<Prp name="starttime" type="D" value="44095.1072043056"/>
+						<Prp name="duration" type="I" value="15192"/>
+						<Prp name="durationwithoutchildren" type="I" value="15192"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBFAEYANgAxAEEAOQAwAEQALQAzADAAOQBFAC0ANAA3ADIAMAAtAEEARABBADMALQA0ADgANABFADIAOQBFADkANwA3ADQARQB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+					</Node>
+					<Node name="test4">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Search for Car Rego and State"/>
+						<Prp name="starttime" type="D" value="44095.1073807292"/>
+						<Prp name="duration" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="0"/>
+						<Prp name="status" type="I" value="3"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="The browser is already running."/>
+							</Node>
+						</Node>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Open Chrome Browser"/>
+						<Prp name="starttime" type="D" value="44095.1066703009"/>
+						<Prp name="duration" type="I" value="10429"/>
+						<Prp name="durationwithoutchildren" type="I" value="10429"/>
+						<Prp name="status" type="I" value="1"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA0ADEAQgBFADQAOQAzADMALQBEADMAMAAwAC0ANAA1ADUAMQAtAEIANwBFADkALQA4ADYARgBFADEAQQBDADIAQwA4ADkAOAB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Navigate to Poncho Insurance Website"/>
+						<Prp name="starttime" type="D" value="44095.106792037"/>
+						<Prp name="duration" type="I" value="9286"/>
+						<Prp name="durationwithoutchildren" type="I" value="9286"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBFAEMARQBEAEUARQBBADYALQA4ADgAQwBCAC0ANAAxAEYANgAtAEEAMQBCADgALQBFADMAQQAyAEQAMgBEADAANAAxAEYAMAB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Unable to verify a value with the property checkpoint, because the target object does not exist."/>
+							</Node>
+						</Node>
+						<Prp name="name" type="S" value="Launch Get a Quote from Home page"/>
+						<Prp name="starttime" type="D" value="44095.1069003588"/>
+						<Prp name="duration" type="I" value="26178"/>
+						<Prp name="durationwithoutchildren" type="I" value="26178"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBEAEMANgAzADcARgBBADkALQAwADAAQQAzAC0ANABFAEQAMAAtADkANQBGADcALQAyAEIAQgBCADIAQgBDADgAQgA5AEEARAB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+					</Node>
+				</Node>
+				<Prp name="name" type="S" value="Poncho"/>
+				<Prp name="starttime" type="D" value="44095.1066703009"/>
+				<Prp name="duration" type="I" value="61085"/>
+				<Prp name="warningtests" type="I" value="1"/>
+				<Prp name="failedtests" type="I" value="2"/>
+				<Prp name="incompletedtests" type="I" value="1"/>
+			</Node>
+		</Node>
+		<Prp name="warningtests" type="I" value="1"/>
+		<Prp name="failedtests" type="I" value="2"/>
+		<Prp name="starttime" type="D" value="44095.1066651157"/>
+		<Prp name="incompletedtests" type="I" value="1"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="testname" type="S" value="Poncho"/>
+		<Prp name="tests" type="I" value="5"/>
+		<Prp name="user" type="S" value="SheltyB"/>
+		<Prp name="stop" type="D" value="44095.1073940046"/>
+		<Prp name="key" type="S" value="{3EAEEEEB-28C2-4F37-A67C-78E551D36E78}"/>
+		<Prp name="name" type="S" value="Poncho"/>
+		<Prp name="host" type="S" value="DESKTOP-Q7UO6MH"/>
+	</Node>
+</Nodes>
