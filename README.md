@@ -13,6 +13,8 @@ The TestComplete project will be executed as part of a CICD pipeline, triggered 
 		- Cars
 - BDD Features and Scenarios structures will be retained in the folder structure of the Code Repository
 - All Automated Scenarios with Test Runs will be connected via Cucumber to Jira Integration and results will display pass failures in Jira
+- Test Runs will list all BDD Scenarios that are executed by TestComplete/TestExecute and bound to Cucumber Studios.
+- Add all Scenarios that are Automated to the Test Run list to be monitored by cucumber Studios
 		
 # GitHub Repository
 - Create a GitHub Account
