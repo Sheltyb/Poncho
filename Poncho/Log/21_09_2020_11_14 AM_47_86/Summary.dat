@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test5">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Select Yes This is my car"/>
+						<Prp name="durationwithoutchildren" type="I" value="9525"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBBADUARQBGAEMANwA4ADIALQBEADkAQwAzAC0ANAA0ADcAMQAtAEIANwBGADgALQA5ADQAQQBDADMAQgAzADAAOQAwADYAOQB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="duration" type="I" value="9525"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="44095.4692845833"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="The browser is already running."/>
+							</Node>
+						</Node>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Open Chrome Browser"/>
+						<Prp name="durationwithoutchildren" type="I" value="11021"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA3ADcAMQA4ADAARgAxADEALQBEADIAOAAxAC0ANABCAEYAMwAtAEIAOABEAEEALQAwADQARABBADUAQQA3ADYARgBFADQAMwB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="duration" type="I" value="11021"/>
+						<Prp name="status" type="I" value="1"/>
+						<Prp name="starttime" type="D" value="44095.4686154282"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Navigate to Poncho Insurance Website"/>
+						<Prp name="durationwithoutchildren" type="I" value="10650"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA0ADQAQgAxADgANABCAEYALQBBADEAMgAyAC0ANAAxAEUANgAtAEEARAA5AEUALQA4ADQAMgAyAEQAOQBCAEEANQBBADgANQB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="duration" type="I" value="10650"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="44095.4687444097"/>
+					</Node>
+					<Node name="test3">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Enter Customer Name on the What should we call you Quote section"/>
+						<Prp name="durationwithoutchildren" type="I" value="13193"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBGAEIANgBBADkAOAA3ADIALQA4ADUARAA5AC0ANAAwAEMARQAtADgAOQBFADUALQBCADQAMQA4ADIARQBFADgANwBCAEIAOAB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="duration" type="I" value="13193"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="44095.4689816319"/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Launch Get a Quote from Home page"/>
+						<Prp name="durationwithoutchildren" type="I" value="9569"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA3AEMAMwAwADEAQQBEADEALQA0ADkAQgAyAC0ANAAyAEQANgAtADkARABBAEUALQA3ADAAQwAzAEEAOAA0AEUAMgBEADcARQB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="duration" type="I" value="9569"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="44095.4688693287"/>
+					</Node>
+					<Node name="test4">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Enter the Car details in the Car page"/>
+						<Prp name="durationwithoutchildren" type="I" value="12766"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA4ADIARABGADgANwAyADcALQA0ADEAMABFAC0ANABDADIAOAAtADkAOQA0AEIALQBDADMAQQAzAEMAOQBEADYANAA5AEEAQwB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="duration" type="I" value="12766"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="44095.4691354514"/>
+					</Node>
+				</Node>
+				<Prp name="name" type="S" value="Poncho"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="warningtests" type="I" value="1"/>
+				<Prp name="duration" type="I" value="66724"/>
+				<Prp name="failedtests" type="I" value="0"/>
+				<Prp name="starttime" type="D" value="44095.4686154282"/>
+			</Node>
+		</Node>
+		<Prp name="executionstatus" type="I" value="1"/>
+		<Prp name="user" type="S" value="SheltyB"/>
+		<Prp name="failedtests" type="I" value="0"/>
+		<Prp name="stop" type="D" value="44095.4694084606"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="tests" type="I" value="6"/>
+		<Prp name="key" type="S" value="{74ACEBF8-C6BA-46C0-87E0-C5AAF531AE13}"/>
+		<Prp name="name" type="S" value="Poncho"/>
+		<Prp name="host" type="S" value="DESKTOP-Q7UO6MH"/>
+		<Prp name="starttime" type="D" value="44095.4686005903"/>
+		<Prp name="warningtests" type="I" value="1"/>
+		<Prp name="testname" type="S" value="Poncho"/>
+	</Node>
+</Nodes>
