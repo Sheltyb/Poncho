@@ -53,12 +53,17 @@ The TestComplete project will be executed as part of a CICD pipeline, triggered 
 - Branches should be created for each Feature UI Tests are created for
 
 # Local Test Execution
-- To Execute TC Project Tests 
+- Once you have completed Scenario development
 - Open the Project Explorer
 - double Click Poncho project
 - Open Test Items tab
-- Add New Test Items in the flow of E2E scenarios
-- Select Feature file BDD Scenarios to executed
+- Add New Test Items in the flow of E2E scenarios - select scenario feature file and scenario to address
+- ensure checbox is enabled - so that new item is part of the test execution flow
+
+To Execute TC Project Tests 
+- While in Project Eplorer --> Test Items list
+- Click on Run Project button or Test Menu --> Run Project
+- Note This may close all browsers if this step ius enabled
  
  # Remote Test Execution
  - TestExecute will be deployed
