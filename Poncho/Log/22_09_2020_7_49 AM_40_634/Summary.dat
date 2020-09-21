@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Navigate to Poncho Insurance Website"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="9481"/>
+						<Prp name="duration" type="I" value="9481"/>
+						<Prp name="starttime" type="D" value="44096.3263200694"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA1ADQARQBFADAAMwAxAEQALQA3AEUAOQA4AC0ANAA4AEEAMgAtAEEAQwBCAEQALQAwADkAQQBBAEYAMgBDAEUARAA1AEIAMwB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+					</Node>
+					<Node name="test5">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Select Yes This is my car"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="7781"/>
+						<Prp name="duration" type="I" value="7781"/>
+						<Prp name="starttime" type="D" value="44096.3268053472"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA2ADAAMwBFAEUANgA1ADQALQA5AEMANwBDAC0ANABCADQAQQAtAEEAMQA3AEYALQA4AEQAMgAwADEAQQAzADEAMQAzAEYAMgB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+					</Node>
+					<Node name="test4">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Enter the Car details in the Car page"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="13547"/>
+						<Prp name="duration" type="I" value="13547"/>
+						<Prp name="starttime" type="D" value="44096.3266475"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA2ADMAQgAwAEYAMQAzAEYALQA3ADAAQwA2AC0ANABCAEYAMQAtAEEARgA2ADMALQBFAEQAMQAzADYAMgAwADYAQwAyAEYANgB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+					</Node>
+					<Node name="test3">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Enter Customer Name on the What should we call you Quote section"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="10844"/>
+						<Prp name="duration" type="I" value="10844"/>
+						<Prp name="starttime" type="D" value="44096.326521088"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA1AEQAMQA0ADgANgAzADYALQBBADMARABDAC0ANABGAEIAOQAtADgANAA3AEUALQAwADkANgBCAEIAMwAzADAARgA2AEEAOAB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Open Chrome Browser"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="12249"/>
+						<Prp name="duration" type="I" value="12249"/>
+						<Prp name="starttime" type="D" value="44096.3261774306"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA1ADIAQgAxADgAMABCAEQALQAxADQARABCAC0ANAA2ADgANQAtADkARAAwADAALQA5AEEAMQAxADYAQQBBADAARABCADEAMAB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Launch Get a Quote from Home page"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="7716"/>
+						<Prp name="duration" type="I" value="7716"/>
+						<Prp name="starttime" type="D" value="44096.3264308681"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA3ADUANwAwADcAMgBEADMALQBDADQANwA3AC0ANAA5ADYAOQAtADkAQQAxADcALQAwADYARAAyADUANABBADQANwAyADIAOAB9AC8AewAwAEMARQA3ADQARgBDADUALQBFADIAQwBEAC0ANAAyADIAMAAtADkAMwBDADIALQAzADgARAA4AEIANwBEADEAMQBCAEUAMAB9AC8AqpN8BLDIC0qKPrSbfs3IGwAAAAAvAGUAbQBwAHQAeQA="/>
+					</Node>
+				</Node>
+				<Prp name="name" type="S" value="Poncho"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="duration" type="I" value="61618"/>
+				<Prp name="starttime" type="D" value="44096.3261774306"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="failedtests" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="user" type="S" value="SheltyB"/>
+		<Prp name="starttime" type="D" value="44096.3261648032"/>
+		<Prp name="tests" type="I" value="6"/>
+		<Prp name="testname" type="S" value="Poncho"/>
+		<Prp name="executionstatus" type="I" value="0"/>
+		<Prp name="failedtests" type="I" value="0"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="key" type="S" value="{F732C41D-F24C-4367-80C5-04A43C837A8E}"/>
+		<Prp name="host" type="S" value="DESKTOP-Q7UO6MH"/>
+		<Prp name="stop" type="D" value="44096.3269084607"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="name" type="S" value="Poncho"/>
+	</Node>
+</Nodes>

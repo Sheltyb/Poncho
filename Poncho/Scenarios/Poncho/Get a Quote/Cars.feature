@@ -18,3 +18,6 @@
 
   Scenario: Enter details for Where do you park this car at night
     Given I am on the Get a Quote Cars page
+    And I can see my car in the we found the result car list
+    When I enter the location I park the car at night as "55 Pyrmont Bridge Road, Pyrmont, NSW 2009"
+    Then I should see the Is this my Address button enabled

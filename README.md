@@ -34,6 +34,7 @@ The TestComplete project will be executed as part of a CICD pipeline, triggered 
 - Open the TestComplete Project
 - Ensure TC project is bound to Cucumber Studio via Tools --> Options --> Cucmber Studio --> Select Poncho project 
 - https://studio.cucumber.io/projects/220411
+- The latest BDD Scenarios will load automatically, but to ensure this is done right click on the Pronto Project from project explorer and select Update from Cucumber Studios
 
 # Coding Practices
 - Object Identification and coding structurers should be based Page Object Modelling (POM)
