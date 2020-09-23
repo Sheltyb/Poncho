@@ -4,6 +4,7 @@ Poncho projectis setup using BDD Features and Scenarios in Cucumber Studios link
 The TestComplete project will be executed as part of a CICD pipeline, triggered by PR's in feature or master branches.
 
 # Feature Scenarios and BDD Setup
+- Create Cucumber Studio accounts by signing up on https://studio.cucumber.io/users/sign_up 
 - Request Cucumber Studio Access to Poncho Project by emailing sheltyb@gmail.com and providing your email address
 - Logon to Cucumber Studios pONCHO project: https://studio.cucumber.io/projects/220411
 - Create BDD Scenarios as per Business and Customer Given, When, Then BDD Actions
