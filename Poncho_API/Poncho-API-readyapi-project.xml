@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="eeda62f7-ad67-48e4-b0f0-bfceede8cca0" created="3.3.2" activeEnvironment="Default environment" name="Poncho_API" resourceRoot="" updated="3.3.2 2020-08-19T12:03:33Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="com.smartbear.swagger.ExportSwaggerAction$FormBase Path"/>
+    <con:setting id="com.smartbear.swagger.ExportSwaggerAction$FormTarget Path"/>
+    <con:setting id="com.smartbear.swagger.ExportSwaggerAction$FormFormat">json</con:setting>
+    <con:setting id="com.smartbear.swagger.ExportSwaggerAction$FormAPI Version">2.0</con:setting>
+    <con:setting id="com.smartbear.swagger.ExportSwaggerAction$FormVersion">Swagger 2.0</con:setting>
+  </con:settings>
+  <con:interface xsi:type="con:RestService" id="e7642efa-68ba-44fb-8549-0c9e2374b29d" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://api.weatherbit.io" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://api.weatherbit.io</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Current" path="/${#Project#version}/current" id="ca25a038-cda7-4bcc-87de-792c0563a876">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Current By Longitude and Latitude" id="7ae3f28a-278f-475a-abef-9d4b6a71e3fe" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>key</con:name>
+            <con:value/>
+            <con:style>QUERY</con:style>
+            <con:default/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>lat</con:name>
+            <con:value/>
+            <con:style>QUERY</con:style>
+            <con:default/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>lon</con:name>
+            <con:value/>
+            <con:style>QUERY</con:style>
+            <con:default/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>403 400</con:status>
+          <con:params/>
+          <con:element xmlns:cur="https://api.weatherbit.io/v2.0/current">cur:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:cur="https://api.weatherbit.io/v2.0/current">cur:Response</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Current Weather - given Long and Lat" id="28151892-0843-4b5e-b2e1-43e90f8473c7" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://api.weatherbit.io</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://api.weatherbit.io/v2.0/current</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="key" value="fdf2a4cfad4a4c34b526dcbb62e6733e"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>lat</con:entry>
+            <con:entry>lon</con:entry>
+            <con:entry>key</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="Current Weather by Postal Code" id="7b7d69dd-e3d0-4b85-b677-47b2eb898970" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>postal_code</con:name>
+            <con:value/>
+            <con:style>QUERY</con:style>
+            <con:default/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>key</con:name>
+            <con:value/>
+            <con:style>QUERY</con:style>
+            <con:default/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:cur="https://api.weatherbit.io/v2.0/current">cur:Response</con:element>
+        </con:representation>
+        <con:request name="Current Weather - give postal code" id="52460cfc-3363-4fa3-904f-5bd655eb842e" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://api.weatherbit.io</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="postal_code" value=""/>
+            <con:entry key="key" value=""/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>postal_code</con:entry>
+            <con:entry>key</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="7940be24-6ba3-43d9-88f9-6277f2e087cc" name="Current Weather">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="3cbeadb7-60f0-48e6-9ff1-7195aa0be7de" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Current Weather via Longatude and Latitude" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="Long Lat test data" id="d6f23319-8f3a-45c4-affa-bd0ff197403f">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration>
+              <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">30</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">80</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">90</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">-20</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">-20</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">100</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">-100</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">-170</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <recognizeAsPlainText>true</recognizeAsPlainText>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>Longatude</con:property>
+          <con:property>Latitude</con:property>
+          <con:startRow/>
+          <con:endRow/>
+          <con:recordsPerIteration>1</con:recordsPerIteration>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:trimValues>false</con:trimValues>
+          <con:entitizeValues>false</con:entitizeValues>
+          <con:restartOnRun>true</con:restartOnRun>
+          <con:expandProperties>false</con:expandProperties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Current - Current Weather - given Long and Lat" id="ae704285-a998-4b10-b9be-ab92aa592507">
+        <con:settings/>
+        <con:config service="https://api.weatherbit.io" resourcePath="/${#Project#version}/current" methodName="Current By Longitude and Latitude" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Current - Current Weather - given Long and Lat" id="28151892-0843-4b5e-b2e1-43e90f8473c7" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://api.weatherbit.io</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.weatherbit.io/v2.0/current</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="61c7bf9a-0ef8-4b70-a14e-d1bb59212b6d" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="lon" value="${Long Lat test data#Longatude}"/>
+              <con:entry key="key" value="${#Project#key}"/>
+              <con:entry key="lat" value="${Long Lat test data#Latitude}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>key</con:entry>
+              <con:entry>lat</con:entry>
+              <con:entry>lon</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="Lon Lat Loop" id="620e8c70-dd25-4617-9950-d7ee675dfb80">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>Long Lat test data</dataSourceStep>
+          <targetStep>Current - Current Weather - given Long and Lat</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>d6f23319-8f3a-45c4-affa-bd0ff197403f</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>ae704285-a998-4b10-b9be-ab92aa592507</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>620e8c70-dd25-4617-9950-d7ee675dfb80</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:testCase id="c02053df-cd99-45b7-b29b-c7fe69cac738" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Current Weather for given postcode" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="Postcode test data" id="ab7f8a36-a6e0-424e-9c49-bc95e7b8639a">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration>
+              <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">2000&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">2260&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <recognizeAsPlainText>true</recognizeAsPlainText>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>postcode</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Current Weather - given Postal Code" id="f35096f1-4f18-4ec7-af01-0020c64a9259">
+        <con:settings/>
+        <con:config service="https://api.weatherbit.io" resourcePath="/${#Project#version}/current" methodName="Current Weather by Postal Code" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Current Weather - given Postal Code" id="52460cfc-3363-4fa3-904f-5bd655eb842e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://api.weatherbit.io</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.weatherbit.io/v2.0/current</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="f6ebdf02-628a-4c72-8b3f-cf9c1147f080" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="1370b0b3-0ab8-4213-a749-7bc588b08578" name="Response SLA">
+              <con:configuration>
+                <SLA>5000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="postal_code" value="${Postcode test data#postcode}"/>
+              <con:entry key="key" value="${#Project#key}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>postal_code</con:entry>
+              <con:entry>key</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="Postcode Loop" id="dad206fd-35b9-4236-b3a1-948ffd48ce3e">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>Postcode test data</dataSourceStep>
+          <targetStep>Current Weather - given Postal Code</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>d6f23319-8f3a-45c4-affa-bd0ff197403f</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>ae704285-a998-4b10-b9be-ab92aa592507</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>620e8c70-dd25-4617-9950-d7ee675dfb80</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>ab7f8a36-a6e0-424e-9c49-bc95e7b8639a</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>dad206fd-35b9-4236-b3a1-948ffd48ce3e</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>f35096f1-4f18-4ec7-af01-0020c64a9259</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties>
+    <con:property>
+      <con:name>key</con:name>
+      <con:value>fdf2a4cfad4a4c34b526dcbb62e6733e</con:value>
+    </con:property>
+    <con:property>
+      <con:name>version</con:name>
+      <con:value>v2.0</con:value>
+    </con:property>
+  </con:properties>
+  <con:wssContainer>
+    <con:outgoing>
+      <con:name>Poncho_SecurityConfig</con:name>
+      <con:usePredefinedOrder>false</con:usePredefinedOrder>
+    </con:outgoing>
+  </con:wssContainer>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:reportTemplates/>
+    <con:xmlTemplates/>
+    <con:xmlTemplates/>
+    <con:parameters/>
+    <con:parameters/>
+  </con:reporting>
+  <con:reporting/>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new java.io.FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new java.io.PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
