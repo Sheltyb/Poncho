@@ -79,6 +79,25 @@ To Execute TC Project Tests
  
  # Multi browser testing
  - invoked by TC's multi browser test feature
- 
-	
 
+# API Testing
+- API Testing uses Smartbear ReadyAPI and SOAPUI toolsets via licenced installation or free trial: https://smartbear.com/product/ready-api/free-trial/
+- Test Project is stored under GitHub \Repo location\Poncho\Poncho_API\Poncho-API-readyapi-project.xml
+- Open the project file using ReadyAPI
+- To Manually execute All Test API's click on the project --> SOAPUI Pro level in the project navigation and click the green Run arrow
+- The will be called via TestComplete or via CICD pipeline to run TestExecute agent
+- Parameters passed into executable test runs will include: 
+	- key - webservices Weather API key - defaulting to the current key used to access weather api/free-trial/
+	- version weather API webservices version [default = v2.0]
+
+#ToDo
+- Poncho_API Test data is currently hard coded in local loop Grid tables and Test Project parameters, but will be stored Config files and EXCEL or CSV files that will be imported
+- Test Data and config files will include information about environments for staged deployment from DEV --> Test --> Staging --> PROD for code build deployments 
+- Need to add extra field in the API-readyapi-project to allow for Country + postal_code options	
+- TestComplete UI project requires better Name Mapping that reduces structure dependencies and better readable object identification layers for Page Object Modelling POM.
+
+# Integration
+- Enable Jira Integration for TC, ReadyAPI and Cucumber Studios - to make Branching, PR, and Build details visible for User Stories and Epics
+- Enable Jira integration into CICD tools 
+- enable CICD Tool integration for TC and SOAPUI execution - TestExecute
+- Enable Integraion of GitHub and Comms tools for Notification of Build success

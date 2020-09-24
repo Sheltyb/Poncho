@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="eeda62f7-ad67-48e4-b0f0-bfceede8cca0" created="3.3.2" activeEnvironment="Default environment" name="Poncho_API" resourceRoot="" updated="3.3.2 2020-08-19T12:03:33Z" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="eeda62f7-ad67-48e4-b0f0-bfceede8cca0" created="3.3.2" activeEnvironment="Default environment" name="Poncho_API" resourceRoot="" updated="3.3.2 2020-08-19T12:03:33Z" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="com.smartbear.swagger.ExportSwaggerAction$FormBase Path"/>
     <con:setting id="com.smartbear.swagger.ExportSwaggerAction$FormTarget Path"/>
@@ -64,6 +64,7 @@
           <con:request/>
           <con:originalUri>https://api.weatherbit.io/v2.0/current</con:originalUri>
           <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
           <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -104,6 +105,7 @@
           <con:endpoint>https://api.weatherbit.io</con:endpoint>
           <con:request/>
           <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
           <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
